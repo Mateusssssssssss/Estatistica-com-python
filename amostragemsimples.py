@@ -18,6 +18,6 @@ prob0 = len(amostra[amostra == 0] )
 prob1 = len(amostra[amostra == 1])
 print(f'Vezes que o 0 apareceu: {prob0}')
 print(f'Vezes que o 1 apareceu: {prob1}')
-#Amostragem, novo dataset criado aleatoriamente onde a valores 0
+#Amostragem, novo dataset criado aleatoriamente onde valores = 0
 data_new = data.loc[amostra == 0]
 print(data_new)

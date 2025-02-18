@@ -1,4 +1,4 @@
-# README - Amostragem Simples com NumPy e Pandas
+# Amostragem Simples com NumPy e Pandas
 
 ## Descrição
 Este script realiza uma **amostragem simples** utilizando as bibliotecas **NumPy** e **Pandas**. Ele carrega um conjunto de dados (Iris dataset) e cria uma nova amostra aleatória, onde os elementos são classificados em dois grupos distintos (0 e 1) com probabilidades definidas. Em seguida, um subconjunto do conjunto de dados é extraído com base nesses valores.
