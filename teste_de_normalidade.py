@@ -24,3 +24,24 @@ plt.show()
 # p ≤ 0,05 → Rejeita a hipótese nula (Os dados não são normalmente distribuídos).
 shapiro1 = stats.shapiro(dados)
 print(shapiro1)
+
+
+#Dados não Normais
+
+dados2 = skewnorm.rvs(4, size=1000)
+print(dados)
+#histograma
+plt.hist(dados2, bins=20)
+plt.title('Dados não normais')
+plt.show()
+#Geração de grafico para verificar se a distribuição é normal
+fig, ax = plt.subplots()
+stats.probplot(dados2, fit=True, plot=ax)
+plt.show()
+#teste de shapiro(teste de hipotese)
+#segundo o argumento é o valor de p, não há como rejeitar a hipotese nula.
+#Interpretação do valor-p (p-value):
+# p > 0,05 → Aceita a hipótese nula (Os dados são normalmente distribuídos).
+# p ≤ 0,05 → Rejeita a hipótese nula (Os dados não são normalmente distribuídos).
+shapiro1 = stats.shapiro(dados2)
+print(shapiro1)
