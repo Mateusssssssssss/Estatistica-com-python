@@ -22,8 +22,8 @@ plt.show()
 #Interpretação do valor-p (p-value):
 # p > 0,05 → Aceita a hipótese nula (Os dados são normalmente distribuídos).
 # p ≤ 0,05 → Rejeita a hipótese nula (Os dados não são normalmente distribuídos).
-shapiro1 = stats.shapiro(dados)
-print(shapiro1)
+shapiro = stats.shapiro(dados)
+print(shapiro)
 
 
 #Dados não Normais
