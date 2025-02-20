@@ -133,6 +133,62 @@ Este repositório demonstra como usar a função `train_test_split` da bibliotec
     - `test_size=0.6`: Define que 60% dos dados serão usados para o teste.
 
 
+# -------------------------------------------------------------------------------------------------
+
+# Análise de Normalidade com SciPy e Matplotlib
+
+o arquivo **teste de normalidade** apresenta um código em Python para analisar a normalidade de um conjunto de dados utilizando a biblioteca `SciPy` e visualizar os resultados com `Matplotlib`.
+
+## Descrição
+
+O código gera dados aleatórios seguindo uma distribuição normal e uma distribuição assimétrica, cria histogramas para visualização e realiza o teste de Shapiro-Wilk para verificar a normalidade dos dados.
+
+## Bibliotecas Utilizadas
+
+- `scipy.stats`: Para geração de distribuições e teste de Shapiro-Wilk.
+- `matplotlib.pyplot`: Para visualização dos dados e distribuição.
+
+## Como Executar
+
+1. Certifique-se de ter o Python instalado.
+2. Instale as dependências necessárias, caso ainda não tenha:
+   ```sh
+   pip install scipy matplotlib
+   ```
+3. Execute o script Python para gerar as análises e gráficos:
+   ```sh
+   python script.py
+   ```
+
+## Funcionamento do Script
+
+### 1. Geração de Dados Normais
+
+- Cria um conjunto de dados de 1000 elementos com distribuição normal.
+- Exibe um histograma desses dados.
+- Gera um `probplot` para verificação da normalidade.
+- Realiza o teste de Shapiro-Wilk para avaliar a normalidade.
+
+### 2. Geração de Dados Não Normais
+
+- Cria um conjunto de dados de 1000 elementos seguindo uma distribuição assimétrica (`skewnorm`).
+- Exibe um histograma desses dados.
+- Gera um `probplot` para verificação da distribuição.
+- Realiza o teste de Shapiro-Wilk para avaliar se a distribuição é normal.
+
+## Interpretação do Teste de Shapiro-Wilk
+
+- **p > 0.05** → Aceita a Hipótese Nula (Os dados são normalmente distribuídos).
+- **p ≤ 0.05** → Rejeita a Hipótese Nula (Os dados não são normalmente distribuídos).
+
+## Exemplo de Uso
+
+Este código pode ser usado para verificar a normalidade de qualquer conjunto de dados, auxiliando em análises estatísticas e Machine Learning.
+
+---
+
+Desenvolvido por Mateus Gabriel
+
 
  
 
